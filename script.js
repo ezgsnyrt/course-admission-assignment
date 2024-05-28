@@ -24,3 +24,6 @@ document.addEventListener("click", function (e) {
         currentCollapsible.classList.add("active");
     }
 });
+
+
+

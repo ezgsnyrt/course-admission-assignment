@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <!-- Temporary Image Sources: https://unsplash.com/photos/person-using-macbook-pro-npxXWgQ33ZQ, https://unsplash.com/photos/macbook-pro-near-green-potted-plant-on-table-zNRITe8NPqY, https://unsplash.com/photos/macbook-pro-showing-vegetable-dish-JVSgcV8_vb4-->
@@ -323,7 +324,17 @@
                     </div>
                     <h2 class="experience-sub-title project-title">Rock-Paper-Scissors Game (Individual Project)</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ezgsnyrt/rock-paper-scissors-game/'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn btn-popup"><a href="#popup">READ ME!</a></button>
+                        <div class="popup" id="popup">
+                            <div class="popup-inner">
+                                <a class="popup-close" href="#"><i class="fa-solid fa-circle-xmark"></i></a>
+                                <div class="popup-text">
+                                    <h1>Project Description and Code Explanation</h1>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-color-2 project-btn btn-popup" onclick="location.href='https://github.com/ezgsnyrt/rock-paper-scissors-game/'">GitHub</button>
                         <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://ezgsnyrt.github.io/rock-paper-scissors-game/'">Live Demo</button>
                     </div>
                 </div>
@@ -333,6 +344,16 @@
                     </div>
                     <h2 class="experience-sub-title project-title">Trivia Quiz Game (Group Project)</h2>
                     <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn btn-popup"><a href="#popup">READ ME!</a></button>
+                        <div class="popup" id="#popup">
+                            <div class="popup-inner">
+                                <a class="popup-close" href="#"><i class="fa-solid fa-circle-xmark"></i></a>
+                                <div class="popup-text">
+                                    <h1>Project Description and Code Explanation</h1>
+                                    <p>Lorem ipsum</p>
+                                </div>
+                            </div>
+                        </div>
                         <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ezgsnyrt/group-project-react/'">GitHub</button>
                         <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://ezgsnyrt.github.io/group-project-react/'">Live Demo</button>
                     </div>
