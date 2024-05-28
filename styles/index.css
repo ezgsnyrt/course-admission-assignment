@@ -300,6 +300,11 @@ section {
     border-radius: 2rem;
 }
 
+.text-container p {
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
 .arrow {
     position: absolute;
     right: -5rem;
@@ -314,6 +319,11 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
     text-align: center;
+}
+
+.details-container p {
+    line-height: 20px;
+    padding-bottom: 1%;
 }
 
 .section-container {
