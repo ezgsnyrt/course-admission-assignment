@@ -578,7 +578,7 @@ footer p {
     align-items: center;
     max-width: 1000px;
     max-height: 1000px;
-    width: 80%;
+    width: 85%;
     height: 90%;
     background-color: white;
     transform: rotate(45deg);
@@ -589,21 +589,21 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 90%;
+    width: 96%;
     height: 100%;
     text-align: justify;
     padding: 3rem;
 }
 
 .popup-text h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: black;
 }
 
 .popup-text p {
-    font-size: 1.2rem;;
+    font-size: 1rem;;
     color: black;
     line-height: 1.5;
 }
