@@ -30,6 +30,7 @@ document.addEventListener("click", function (e) {
 const front = document.getElementById('front')
 const back = document.getElementById('back')
 const btn = document.getElementById('flip-btn')
+const btnBack = document.getElementById('flip-btn-back')
 
 function handleFlip() {
   front.classList.toggle('flipped')
@@ -37,3 +38,4 @@ function handleFlip() {
 }
 
 btn.addEventListener('click', handleFlip)
+btnBack.addEventListener('click', handleFlip)

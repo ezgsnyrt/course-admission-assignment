@@ -648,63 +648,65 @@ footer p {
 }
 
 
-/* */
+/* Flip card*/
 
-
-  /* .container {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-  } */
-
-  .flip-card {
-    /* margin-top: 1rem;
-    height: 300px;
-    width: 250px;
-    border-radius: 0.25rem; */
+.flip-card {
     position: relative;
-    display: flex;
-    flex-direction: column;
-  }
+}
 
-  .flip-card-front,
-  .flip-card-back {
+.flip-card-front,
+.flip-card-back {
     box-sizing: border-box;
-    /* border-radius: 0.25rem;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -1px rgba(0, 0, 0, 0.06); */
-    height: 80%;
-    width: 80%;
     transition: transform 0.5s ease;
-    position: absolute;
-    -webkit-backface-visibility: hidden;
+}
+
+.flip-card-front {
     backface-visibility: hidden;
-  }
+}
 
+.flip-card-back {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    right: 1%;
+}
 
+.flip-card-back.flipped p {
+    color: black;
+}
 
-  .flip-card-back {
-    transform: perspective(1000px) rotateY(180deg);
-  }
-
-  .flip-card-back.flipped {
+.flip-card-back {
     transform: perspective(1000px) rotateY(0deg);
-  }
+    z-index: 1;
+}
 
-  .flip-card-front {
+.flip-card-back.flipped {
+    z-index: -1;
     transform: perspective(1000px) rotateY(0deg);
-  }
+}
+.flip-card-back.flipped * {
+    display: none;;
+}
 
-  .flip-card-front.flipped {
+.flip-card-front {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.flip-card-front.flipped {
     transform: perspective(1000px) rotateY(-180deg);
-  }
+}
 
+.flip-card-back p {
+    transform: rotateY(180deg);
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
 
-
+.btn-flip {
+    color: rgb(232, 91, 49);
+}
 
 
 
@@ -723,6 +725,11 @@ footer p {
     #contact,
     #projects {
         height: fit-content;
+    }
+
+    .flip-card-back p {
+        font-size: 16px;
+        line-height: 1.3rem;
     }
 }
 
@@ -834,5 +841,10 @@ footer p {
 
     .text-container {
         text-align: justify;
+    }
+
+    .flip-card-back p {
+        font-size: 6px;
+        line-height: 0.4rem;
     }
 }
