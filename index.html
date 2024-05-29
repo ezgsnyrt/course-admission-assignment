@@ -322,7 +322,7 @@
                     <div class="article-container">
                         <img src="./images/project1.png" alt="project image" class="project-img"/>
                     </div>
-                    <h2 class="experience-sub-title project-title">Rock-Paper-Scissors Game (Individual Project)</h2>
+                    <h2 class="experience-sub-title project-title">Rock-Paper-Scissors Game <br>(Individual Project)</h2>
                     <div class="btn-container">
                         <button class="btn btn-color-2 project-btn btn-popup"><a href="#popup">READ ME!</a></button>
                         <div class="popup" id="popup">
@@ -333,7 +333,7 @@
                                     <p>This projects aims to create a rock, paper, scissors game using HTML, CSS and JavaScript together with React.
                                     I started developing the game by creating the React project. After that, I wrote the basic HTML and CSS codes
                                     which enabled me to prepare the initial structure of the game. I also helped me monitor and follow the changes
-                                    simultaneously. Then, I integrated JavaScript into my existing codes.
+                                    simultaneously. Then, I integrated JavaScript into my existing codes.</p>
                                     <p>This project basically has two components. The first component is the App.js which involves all the variable
                                     definitions, functions and HTML contents. This compont has an ‘actions’ object which defines the rules of the
                                     game and indicates which action beats which one. Also, there is a function for random actions which select
@@ -364,24 +364,18 @@
                         <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://ezgsnyrt.github.io/rock-paper-scissors-game/'">Live Demo</button>
                     </div>
                 </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
+                <div class="details-container color-container flip-card">
+                    <div id="front" class="article-container flip-card-front">
                         <img src="./images/project2.png" alt="project image" class="project-img"/>
-                    </div>
-                    <h2 class="experience-sub-title project-title">Trivia Quiz Game (Group Project)</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn btn-popup"><a href="#popup">READ ME!</a></button>
-                        <div class="popup" id="#popup">
-                            <div class="popup-inner">
-                                <a class="popup-close" href="#"><i class="fa-solid fa-circle-xmark"></i></a>
-                                <div class="popup-text">
-                                    <h1>Project Description and Code Explanation</h1>
-                                    <p>Lorem ipsum</p>
-                                </div>
-                            </div>
+                        <h2 class="experience-sub-title project-title">Trivia Quiz Game: Quiz Time <br>(Group Project)</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn btn-flip" id="flip-btn">FLIP ME!</button>
+                            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ezgsnyrt/group-project-react/'">GitHub</button>
+                            <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://ezgsnyrt.github.io/group-project-react/'">Live Demo</button>
                         </div>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/ezgsnyrt/group-project-react/'">GitHub</button>
-                        <button class="btn btn-color-2 project-btn" onclick="window.location.href='https://ezgsnyrt.github.io/group-project-react/'">Live Demo</button>
+                    </div>
+                    <div id="back" class="article-container flip-card-back flipped">
+                        <p>Flip-card-back</p>
                     </div>
                 </div>
             </div>

@@ -648,6 +648,60 @@ footer p {
 }
 
 
+/* */
+
+
+  /* .container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  } */
+
+  .flip-card {
+    /* margin-top: 1rem;
+    height: 300px;
+    width: 250px;
+    border-radius: 0.25rem; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    box-sizing: border-box;
+    /* border-radius: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+    height: 80%;
+    width: 80%;
+    transition: transform 0.5s ease;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+
+
+  .flip-card-back {
+    transform: perspective(1000px) rotateY(180deg);
+  }
+
+  .flip-card-back.flipped {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  .flip-card-front {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+
+  .flip-card-front.flipped {
+    transform: perspective(1000px) rotateY(-180deg);
+  }
 
 
 
